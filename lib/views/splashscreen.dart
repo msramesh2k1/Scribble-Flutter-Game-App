@@ -3,6 +3,8 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:scribble/helpers/colors.dart';
 
+import 'mainscreen.dart';
+
 class SplashScreen extends StatefulWidget {
   const SplashScreen({Key? key}) : super(key: key);
 
@@ -17,7 +19,7 @@ class _SplashScreenState extends State<SplashScreen> {
     super.initState();
     Timer(Duration(seconds: 2), () {
       Navigator.pushReplacement(
-          context, MaterialPageRoute(builder: (_) => MainScreen));
+          context, MaterialPageRoute(builder: (_) => MainScreen()));
     });
   }
 
